@@ -6,15 +6,15 @@ import { useGetSongsByCountryQuery } from '../redux/services/shazamCore';
 
 const CountryTracks = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-  const { data, isFetching, error } = useGetSongsByCountryQuery("IN");
+  const { data, isFetching, error } = useGetSongsByCountryQuery("CL");
 
-  if (isFetching) return <Loader title="Loading Songs around you..." />;
+  if (isFetching) return <Loader title="Cargando..." />;
 
   if (error) return <Error />;
 
   return (
     <div className="flex flex-col">
-      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Around you <span className="font-black">INDIA</span></h2>
+      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Canciones más escuchadas en <span className="font-black">Chile</span></h2>
 
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
         {data?.map((song, i) => (

@@ -4,6 +4,7 @@ import ArtistDetails from './ArtistDetails';
 import SongDetails from './SongDetails';
 import Search from './Search';
 import TopCharts from './TopCharts';
+import TopChartsHiphop from './TopChartsHiphop';
 import AroundYou from './AroundYou';
 
 export {
@@ -14,4 +15,5 @@ export {
   SongDetails,
   TopCharts,
   AroundYou,
+  TopChartsHiphop,
 };

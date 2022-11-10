@@ -4,13 +4,13 @@
 
 /* Active Navigation Link */
 .active {
-  @apply text-green-500;
+  @apply text-yellow-400;
 }
 
 .active svg {
-  @apply text-green-500;
+  @apply text-yellow-400;
+  
 }
-
 .bar:nth-child(2) {
   animation-delay: 0.2s;
 }

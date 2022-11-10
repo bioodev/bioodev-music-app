@@ -25,7 +25,7 @@ const Searchbar = () => {
           autoComplete="off"
           id="search-field"
           className="flex-1 bg-transparent  placeholder-black-900 outline-none text-base text-white p-4"
-          placeholder="Search a song....."
+          placeholder="Buscar..."
           type="search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
